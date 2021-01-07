@@ -1,0 +1,621 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style type="text/css">
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: none;
+      -webkit-text-resize: 100%;
+      text-resize: 100%;
+    }
+
+    p.tight {
+      line-height: 20px;
+    }
+
+    a {
+      outline: none;
+      color: #1C8AC2;
+      font-weight: bold !important;
+    }
+
+    a:hover {
+      text-decoration: underline !important;
+    }
+
+    a [x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+
+    /* Original Button Style */
+    .btn {
+      background-color: #1C8AC2;
+      color: #fff !important;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 5px;
+      font-family: 'Aptifer Sans LT W01', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 17px;
+      text-transform: uppercase;
+      text-decoration: none !important;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      text-decoration: none !important;
+      background: #273D5E !important;
+      transition: all 0.3s ease 0s;
+    }
+
+    .btn2 {
+      background-color: none;
+      color: #fff !important;
+      border-radius: 5px;
+      border: solid 1px #fff;
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 5px;
+      font-family: 'Aptifer Sans LT W01', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 17px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+    }
+
+    .btn2:hover {
+      text-decoration: none !important;
+      background: #fff;
+      transition: all 0.3s ease 0s;
+      color: #1C8AC2 !important;
+    }
+
+    .btn3 {
+      background: linear-gradient(131deg, rgba(31, 120, 166, 1) 12%, rgba(28, 138, 194, 1) 47%, rgba(29, 153, 217, 1) 100%);
+      background-color: #1C8AC2;
+      color: #fff !important;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 7px 15px;
+      margin: 5px;
+      font-family: 'Aptifer Sans LT W01', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 17px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+    }
+
+    .btn3:hover {
+      text-decoration: none !important;
+      background: #273D5E !important;
+      transition: all 0.3s ease 0s;
+    }
+
+    .btn:visited,
+    .btn2:visited,
+    .btn3:visited,
+    .color-a:visited,
+    .color-b:visited,
+    .color-c:visited,
+    .color-d:visited,
+      {
+      color: #ffffff !important;
+    }
+
+    /* Messiah University Button Colors */
+    .color-a {
+      background: linear-gradient(131deg, rgba(31, 120, 166, 1) 12%, rgba(28, 138, 194, 1) 47%, rgba(29, 153, 217, 1) 100%);
+      background-color: #1C8AC2;
+      color: #fff !important;
+      border: 1px solid rgba(31, 120, 166, 1);
+    }
+
+    .color-b {
+      background-color: rgb(214, 116, 42);
+      background: linear-gradient(115deg, rgba(214, 116, 42, 1) 0%, rgba(166, 55, 56, 1) 69%);
+      color: #fff !important;
+    }
+
+    .color-c {
+      background-color: rgb(0, 105, 139);
+      background: linear-gradient(131deg, rgba(0, 105, 139, 1) 12%, rgba(97, 68, 149, 1) 100%);
+      color: #fff !important;
+    }
+
+    .color-d {
+      background-color: rgb(26, 41, 62);
+      background: linear-gradient(117deg, rgba(26, 41, 62, 1) 0%, rgba(47, 71, 106, 1) 67%, rgba(47, 73, 111, 1) 100%);
+      background-color: #273d5e;
+      color: #fff !important;
+    }
+
+    .btn-hover:hover {
+      text-decoration: none !important;
+      background: #273D5E !important;
+      transition: all 0.3s ease 0s;
+    }
+
+    .btn-hover:visited {
+      color: #ffffff !important;
+    }
+
+    .active:hover {
+      opacity: 0.8;
+    }
+
+    .btn,
+    .active {
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    table td {
+      border-collapse: collapse !important;
+    }
+
+    .ExternalClass,
+    .ExternalClass a,
+    .ExternalClass span,
+    .ExternalClass b,
+    .ExternalClass br,
+    .ExternalClass p,
+    .ExternalClass div {
+      line-height: inherit;
+    }
+
+    p {
+      line-height: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: #5B5B5B;
+      font-weight: normal !important;
+    }
+
+    h1 {
+      padding: 0 0 15x;
+      font: bold 20px/22px Verdana, Geneva, sans-serif;
+      color: #273d5e;
+    }
+
+    h2 {
+      font: bold 19px/21px Verdana, Geneva, sans-serif;
+      color: #1C8AC2;
+    }
+
+    h3 {
+      font: bold 17px/19px Verdana, Geneva, sans-serif;
+      color: #273d5e;
+    }
+
+    @media only screen and (max-width:500px) {
+
+      /* default style */
+      table[class="flexible"] {
+        width: 100% !important;
+      }
+
+      *[class="hide"] {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+        font-size: 0 !important;
+        line-height: 0 !important;
+      }
+
+      td[class="img-flex"] img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      td[class="aligncenter"] {
+        text-align: center !important;
+      }
+
+      th[class="flex"] {
+        display: block !important;
+        width: 100% !important;
+      }
+
+      tr[class="table-holder"] {
+        display: table !important;
+        width: 100% !important;
+      }
+
+      th[class="thead"] {
+        display: table-header-group !important;
+        width: 100% !important;
+      }
+
+      th[class="tfoot"] {
+        display: table-footer-group !important;
+        width: 100% !important;
+      }
+
+      th[class="trow"] {
+        display: table-row !important;
+        width: 100% !important;
+      }
+
+      /* custom style */
+      td[class="indent-null"] {
+        padding: 0 !important;
+      }
+
+      td[class="nav"] {
+        padding: 10px 5px 20px !important;
+        text-align: center !important;
+        font-size: 12px !important;
+        line-height: 14px !important;
+      }
+
+      td[class="header"] {
+        padding: 5px 10px !important;
+        width: auto !important;
+      }
+
+      td[class="pre-header"] {
+        padding: 15px 10px !important;
+      }
+
+      td[class="footer"] *,
+      td[class="post-footer"] *,
+      td[class="pre-header"] * {
+        text-align: center !important;
+      }
+
+      td[class="footer"],
+      td[class="frame"] {
+        padding: 20px 10px !important;
+      }
+
+      td[class="post-footer"] {
+        padding: 20px 10px !important;
+      }
+
+      td[class="h-auto"] {
+        height: auto !important;
+      }
+
+      table[class="center"] {
+        float: none !important;
+        margin: 0 auto !important;
+        width: auto !important;
+      }
+
+      td[class="title-line"] {
+        font-size: 42px !important;
+        line-height: 26px !important;
+      }
+
+      Â td[class="p-20"] {
+        padding: 0 0 0 0 !important;
+        font-size: 22px !important;
+        line-height: 20px !important;
+      }
+    }
+  </style>
+</head>
+
+<body bgcolor="#E4EAEE" style="margin:0; padding:0;">
+  <table bgcolor="#E4EAEE" cellpadding="0" cellspacing="0" style="min-width:320px;" width="100%">
+    <!-- fix for gmail -->
+    <tbody>
+      <tr>
+        <td style="line-height:0;">
+          <div style="display:none; white-space:nowrap; font:15px/1px courier;">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table align="center" cellpadding="0" cellspacing="0" class="flexible" style="margin:0 auto;" width="700">
+            <!-- fix for gmail -->
+            <tbody>
+              <tr>
+                <td class="hide">
+                  <table cellpadding="0" cellspacing="0" style="width:700px !important;" width="700">
+                    <tbody>
+                      <tr>
+                        <td style="min-width:700px; font-size:0; line-height:0;">&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!-- MU branding color strip -->
+          <table cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td bgcolor="#E4EAEE">
+                  <table align="center" cellpadding="0" cellspacing="0" class="flexible" style="margin:0 auto;" width="700">
+                    <tbody>
+                      <tr>
+                        <td bgcolor="#FFFFFF" style="background-size:cover;" valign="top">
+                          <table cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td class="img-flex"><img alt="" src="https://mcadmissions.messiah.edu/www/images/template%20images%20(don't%20delete)/mu-branded-strip.png"
+                                    style="vertical-align: top; border-width: 0px; border-style: solid; width: 700px; height: 14px;" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Header with logo and department name -->
+
+          <table cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td bgcolor="#E4EAEE">
+                  <table align="center" cellpadding="0" cellspacing="0" class="flexible" style="margin:0 auto;" width="700">
+                    <tbody>
+                      <tr>
+                        <td bgcolor="#FFFFFF" class="holder" style="padding: 30px 5px">
+                          <table cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td class="hide" width="16">&nbsp;</td>
+                                <td align="center" class="header" width="174"><a href="http://www.messiah.edu"><img alt="" src="https://mcadmissions.messiah.edu/www/images/template%20images%20(don't%20delete)/mu-logo-blue2.png"
+                                      style="vertical-align: top; border-width: 0px; border-style: solid; width: 200px; height: 53px;" /></a></td>
+                                <td align="right" class="hide" style="font:20px/24px Verdana, Geneva, sans-serif; color:#273d5e;">Add office / department </br>name here</td>
+                                <td class="hide" width="27">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- banner new -->
+
+          <table cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td bgcolor="#E4EAEE">
+                  <table align="center" cellpadding="0" cellspacing="0" class="flexible" style="margin:0 auto;" width="700">
+                    <tbody>
+                      <tr>
+                        <td bgcolor="#7D8B8C" style="background-size:cover;" valign="top">
+                          <table cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td class="img-flex"><img alt="" src="https://mx.technolutions.net/proxy/oE6xu9ldyYfKwrPUQJYJh3Y3mC9SmR2uK1brASCZJWXX0QEx72snHG6JOz8RYRd8jklXMqNWdjxU5OmBwKAACw1tjqFYrVwm4WMW9WXBMnoU8ukeePyL2z0syuKtsStN"
+                                    style="vertical-align: top; border-width: 0px; border-style: solid; width: 700px; height: auto;" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <!-- Content Area (one column) -->
+
+          <table cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td bgcolor="#E4EAEE">
+                  <table align="center" cellpadding="0" cellspacing="0" class="flexible" style="margin:0 auto;" width="700">
+                    <tbody>
+                      <tr>
+                        <td bgcolor="#FFFFFF" class="frame" style="padding:47px 56px 1px;">
+                          <table cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <h1>
+                                    Heading goes here
+                                  </h1>
+
+                                  <p>
+                                    Content goes here
+                                  </p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+<!-- Start builder elements -->
+
+
+
+
+<!-- End builder elements -->
+
+  <!-- footer section -->
+
+  <table cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+      <tr>
+        <td bgcolor="#E4EAEE">
+          <table align="center" cellpadding="0" cellspacing="0" class="flexible" style="margin:0 auto;" width="700">
+            <tbody>
+              <tr>
+                <td bgcolor="#FFFFFF" class="footer" style="padding:36px 57px 57px;">
+                  <table cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <th align="left" class="flex" style="vertical-align:top; padding:0;" width="360">
+                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td style="padding:0 0 15px;"><a href="http://www.messiah.edu"><img alt="Messiah University" src="https://mcadmissions.messiah.edu/www/images/template%20images%20(don't%20delete)/mu-logo-blue2.png"
+                                              style="vertical-align: top; border-width: 0px; border-style: solid; width: 180px; height: 48px;" /></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>
+                                            One University Ave<br />
+                                            Mechanicsburg, PA 17055<br />
+                                            <a href="tel:7177662511" style="text-decoration:none; color:#4c4c4c;" target="_blank">717-766-2511</a>
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </th>
+                                <th class="flex" height="20" style="padding:0;" width="24">&nbsp;</th>
+                                <th align="left" class="flex" style="vertical-align:top; padding:0;">
+                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td style="padding:34px 0 10px;">
+                                          <table cellpadding="0" cellspacing="0" class="center" style="margin:inherit;">
+                                            <tbody>
+                                              <tr>
+                                                <td><a class="active" href="https://www.messiah.edu/facebook"><img alt="facebook" src="https://mcadmissions.messiah.edu/www/images/template%20images%20(don't%20delete)/mc-facebook.png"
+                                                      style="vertical-align: top; border-width: 0px; border-style: solid; width: 30px; height: 30px;" /></a></td>
+                                                <td width="8">&nbsp;</td>
+                                                <td><a class="active" href="https://www.snapchat.com"><img alt="twitter" src="https://mcadmissions.messiah.edu/www/images/template%20images%20(don't%20delete)/mc-snapchat.png"
+                                                      style="vertical-align: top; border-width: 0px; border-style: solid; width: 30px; height: 30px;" /></a></td>
+                                                <td width="8">&nbsp;</td>
+                                                <td><a class="active" href="https://www.messiah.edu/youtube"><img alt="youtube" src="https://mcadmissions.messiah.edu/www/images/template%20images%20(don't%20delete)/mc-youtube.png"
+                                                      style="vertical-align: top; border-width: 0px; border-style: solid; width: 30px; height: 30px;" /></a></td>
+                                                <td width="8">&nbsp;</td>
+                                                <td><a class="active" href="https://www.messiah.edu/instagram"><img alt="instagram" src="https://mcadmissions.messiah.edu/www/images/template%20images%20(don't%20delete)/mc-instagram.png"
+                                                      style="vertical-align: top; border-width: 0px; border-style: solid; width: 30px; height: 30px;" /></a></td>
+                                                <td width="8">&nbsp;</td>
+                                                <td><a class="active" href="https://www.messiah.edu/twitter"><img alt="twitter" src="https://mcadmissions.messiah.edu/www/images/template%20images%20(don't%20delete)/mc-twitter.png"
+                                                      style="vertical-align: top; border-width: 0px; border-style: solid; width: 30px; height: 30px;" /></a></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p>
+                                            <a href="http://www.messiah.edu/info/20117/social_media?utm_source=strongview&amp;utm_medium=email&amp;utm_campaign=ug-admissions-email" style="text-decoration:none; color:#6b6b6b;">Connect with us on
+                                              social media</a>
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- post-footer with tagline -->
+
+  <table cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+      <tr>
+        <td bgcolor="#E4EAEE">
+          <table align="center" cellpadding="0" cellspacing="0" class="flexible" style="margin:0 auto;" width="700">
+            <tbody>
+              <tr>
+                <td bgcolor="#1C8AC2" class="frame" style="background: rgb(31,120,166); background: linear-gradient(131deg, rgba(31,120,166,1) 12%, rgba(28,138,194,1) 47%, rgba(29,153,217,1) 100%); padding:19px 10px;">
+                  <table cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center" style="font:italic 15px/22px Verdana, Geneva, sans-serif; color:#fff;">SHARPENING INTELLECT&nbsp;&nbsp; DEEPENING CHRISTIAN FAITH&nbsp;&nbsp; INSPIRING ACTION</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- MU branding strip -->
+
+  <table cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+      <tr>
+        <td bgcolor="#E4EAEE">
+          <table align="center" cellpadding="0" cellspacing="0" class="flexible" style="margin:0 auto;" width="700">
+            <tbody>
+              <tr>
+                <td bgcolor="#FFFFFF" style="background-size:cover;" valign="top">
+                  <table cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td class="img-flex"><img alt="" src="https://mcadmissions.messiah.edu/www/images/template%20images%20(don't%20delete)/mu-branded-strip.png"
+                            style="vertical-align: top; border-width: 0px; border-style: solid; width: 700px; height: 14px;" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
